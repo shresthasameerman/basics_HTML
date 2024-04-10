@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sum and Product of an Array</h2>
+
+<button onclick="computeSumAndProduct()">Compute Sum and Product</button>
+
+<p id="result"></p>
+
+<script>
+const arr = [1, 2, 3, 4, 5];
+
+function computeSum(arr) {
+  return arr.reduce((acc, val) => acc + val, 0);
+}
+
+function computeProduct(arr) {
+  return arr.reduce((acc, val) => acc * val, 1);
+}
+
+function computeSumAndProduct() {
+  const sum = computeSum(arr);
+  const product = computeProduct(arr);
+  const resultText = Sum: ${sum}, Product: ${product};
+  document.getElementById('result').textContent = resultText;
+}
+</script>
+
+</body>
+</html>

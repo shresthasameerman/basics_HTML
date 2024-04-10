@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Prompt the user to enter their name
+		var name = prompt("Please enter your name:");
+		// Prompt the user to enter their student ID
+	var studentId = prompt("Please enter your student ID:");
+		// Display the input values in an alert dialog box
+		alert("Your name is " + name + " and your student ID is " + studentId + ".");
+	</script>
+</body>
+</html>

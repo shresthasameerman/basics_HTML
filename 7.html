@@ -1,0 +1,16 @@
+<html>
+<table id="myTable">
+  <tr><th>S.N</th><th>Name</th><th>Image</th></tr>
+  <tr><td>1</td><td>image 1</td><td>1.jpg</td></tr>
+  <tr><td>2</td><td>image 2 </td><td>2.jpg</td></tr>
+  <tr><td>3</td><td>image 3</td><td>3.jpg</td></tr>
+  <tr><td>4</td><td>image 4</td><td>4.jpg</td></tr>
+  <tr><td>5</td><td>image 5</td><td>5.jpg</td></tr>
+</table>
+<script>
+    var table = document.getElementById("myTable");
+for (var i = 1; i < table.rows.length; i += 2) {
+  table.rows[i].style.backgroundColor = "lightgray";
+}
+</script>
+</html>

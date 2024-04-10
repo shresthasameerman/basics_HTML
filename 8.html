@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Simplified Twisted JavaScript Code</h2>
+
+<button onclick="joinArray()">Join Array</button>
+<select id="joinType">
+  <option value=",">Comma (,)</option>
+  <option value="">Empty String</option>
+  <option value=" + ">Space + Space (" + ")</option>
+</select>
+
+<p id="result"></p>
+
+<script>
+const myColor = ["Red", "Green", "White", "Black"];
+
+function joinArray() {
+  const joinType = document.getElementById("joinType").value;
+  document.getElementById("result").innerHTML = myColor.join(joinType);
+}
+</script>
+
+</body>
+</html>
